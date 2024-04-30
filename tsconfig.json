@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+, "src/components/Cropper.jsx", "src/components/Comments.jsx", "src/components/Comment.jsx", "src/components/ChangePic.jsx", "src/components/Card2.jsx", "src/components/Card.jsx", "src/components/Navbar.jsx", "src/components/Noty.jsx", "src/components/Name.jsx", "src/components/Feed2.jsx", "src/components/Feed.jsx", "src/components/AddPost.jsx", "src/components/ImagePreview.jsx", "src/components/ProfileEdit.jsx", "src/components/Reply.jsx", "src/pages/Videos.jsx"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

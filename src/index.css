@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+  font-family: Arial;
+
+  height: 100dvh;
+
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  outline: none !important;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#input,#username,#password,#textarea,#date,#firstname,#lastname,#email,#confirmPassword {
+  &:focus {
+    border: 2px solid #00acee;
+  }
+}
+
+#popup {
+  animation-name: Popup;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-delay: 0s;
+  opacity: 0.95;
+}
+
+@keyframes Popup{
+  100%{
+      display: none;
+      opacity: 0;
+  }
+}
+
+#Container {
+  animation-name: SlideIn;
+  animation-duration: 0.1s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+
+}
+
+@keyframes SlideIn{
+  0%{
+    transform: translateX(200px);
+  }
+  100%{
+    transform: translateX(0px);
+
+  }
+}
+
+@keyframes SlideOut{
+  0%{
+    transform: translateX(0px);
+  }
+  100%{
+    transform: translateX(200px);
+
+  }
+}
+
+
