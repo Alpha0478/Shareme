@@ -47,12 +47,10 @@ const Home = ({ socket}) => {
           setToggleSidebar={setToggleSidebar}
         />
         <>
-          <div className="pt-[50px] absolute h-full hide-scrollbar w-full lg:w-3/4">
+          {/* <div className="pt-[50px] absolute h-full hide-scrollbar w-full lg:w-3/4">
             {isLoading ?
-              // <Spinner />
-              ""
+              <Spinner />
               : error ?
-
                 <div className="flex flex-col  text-lg text-[#cc1a00] h-full w-full items-center justify-center">
                 <TfiInfoAlt fontSize={50}/>
                 An error occured
@@ -63,7 +61,7 @@ const Home = ({ socket}) => {
                 ))
             }
 
-          </div>
+          </div> */}
         </>
       </div>
       {toggleAddpost && (

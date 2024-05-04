@@ -57,10 +57,8 @@ const CompleteRegistration = ({
     e.preventDefault();
 
     try{
-
      const res = await axios.post("/auth/getuser", { profileName });
-      if(res.status === 404){
-
+      if(res.status === 200){
        checkEmail(e)
       } 
     }catch(err){

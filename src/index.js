@@ -11,7 +11,7 @@ import { QueryClient,QueryClientProvider } from '@tanstack/react-query';
 import {io} from "socket.io-client"
 
 const queryClient = new QueryClient()
-const socket= io("http://192.168.0.107:5000")
+const socket= io("http://192.168.0.105:5000")
 
 // import {fetchPosts,urlEndpoint as cacheKey1} from './components/fetchers/fetch.js'
 // import {fetchUser,usersUrlEndpoint as cacheKey2} from './components/fetchers/fetch.js'

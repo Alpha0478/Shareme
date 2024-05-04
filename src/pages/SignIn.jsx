@@ -67,6 +67,7 @@ const SignIn = () => {
       }
      
     } catch (err) {
+      console.log(err)
       if (err.response.status === 404) {
          RestartAnimation({message:"Invalid credentials"})
       } else if (err.response.status === 500) {
